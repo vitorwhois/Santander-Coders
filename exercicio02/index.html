@@ -1,0 +1,56 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Vitor Ruis da Silva</title>
+</head>
+<body>
+  <form action="/action_page.php" method="post">
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome">
+
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" name="cpf">
+
+    <label for="data-nascimento">Data de nascimento:</label>
+    <input type="date" id="data-nascimento" name="data-nascimento">
+
+    <label for="sexo">Sexo:</label>
+    <select id="sexo" name="sexo">
+      <option value="masculino">Masculino</option>
+      <option value="feminino">Feminino</option>
+    </select>
+
+    <label for="estado-civil">Estado civil:</label>
+    <select id="estado-civil" name="estado-civil">
+      <option value="solteiro">Solteiro</option>
+      <option value="casado">Casado</option>
+      <option value="viúvo">Viúvo</option>
+      <option value="divorciado">Divorciado</option>
+    </select>
+
+    <label for="interesses">Interesses:</label>
+    <input type="checkbox" id="musica" name="interesses[]" value="musica">
+    <label for="musica">Música</label>
+    <input type="checkbox" id="cinema" name="interesses[]" value="cinema">
+    <label for="cinema">Cinema</label>
+    <input type="checkbox" id="esportes" name="interesses[]" value="esportes">
+    <label for="esportes">Esportes</label>
+
+    <label for="lista-ordenada">Lista de compras:</label>
+    <ul id="lista-ordenada">
+      <li>Arroz</li>
+      <li>Feijão</li>
+      <li>Macarrão</li>
+    </ul>
+
+    <label for="lista-nao-ordenada">Lista de tarefas:</label>
+    <ul id="lista-nao-ordenada">
+      <li>Ir ao mercado</li>
+      <li>Lavar a roupa</li>
+      <li>Limpar a casa</li>
+    </ul>
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
